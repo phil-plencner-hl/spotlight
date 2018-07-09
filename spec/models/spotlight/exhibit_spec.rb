@@ -39,6 +39,7 @@ describe Spotlight::Exhibit, type: :model do
     before do
       subject.contact_emails_attributes = [{ 'email' => 'chris@example.com' }, { 'email' => 'jesse@stanford.edu' }]
     end
+
     it 'accepts nested contact_emails' do
       expect(subject.contact_emails.size).to eq 2
     end
@@ -85,6 +86,7 @@ describe Spotlight::Exhibit, type: :model do
         { 'show_in_sidebar' => '0', 'name' => '', 'contact_info' => { 'email' => '', 'title' => 'Librarian', 'location' => '' } }
       ]
     end
+
     it 'accepts nested contacts' do
       expect(subject.contacts.size).to eq 2
     end
@@ -101,6 +103,7 @@ describe Spotlight::Exhibit, type: :model do
 
     describe 'when under a non-default locale' do
       before { I18n.locale = 'es' }
+
       after { I18n.locale = 'en' }
 
       it 'loads the first published about page for that locale' do
@@ -172,6 +175,7 @@ describe Spotlight::Exhibit, type: :model do
       before do
         exhibit.filters.create(field: 'orcid_ssim', value: '123')
       end
+
       it 'uses the provided filter' do
         expect(subject).to include('orcid_ssim' => '123')
       end
@@ -349,9 +353,11 @@ describe Spotlight::Exhibit, type: :model do
       FactoryBot.create(:translation, locale: 'fr', exhibit: persisted_exhibit, key: "#{persisted_exhibit.slug}.description", value: 'Description français')
       Translation.current_exhibit = persisted_exhibit
     end
+
     after do
       I18n.locale = 'en'
     end
+
     it 'has a translatable title' do
       expect(persisted_exhibit.title).to eq 'Sample'
       I18n.locale = 'fr'
