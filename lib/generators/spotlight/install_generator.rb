@@ -47,9 +47,22 @@ module Spotlight
     end
 
     def assets
+      #create a nothumb directory for the nothumb theme 
+      empty_directory 'app/assets/stylesheets/nothumb'
+      
+      #use our modified application.css
+      copy_file 'application.css', 'app/assets/stylesheets/application.css' 
+      copy_file 'application_nothumb.css', 'app/assets/stylesheets/application_nothumb.css'
+      copy_file 'nothumb.scss', 'app/assets/stylesheets/nothumb/nothumb.scss'
       copy_file 'spotlight.scss', 'app/assets/stylesheets/spotlight.scss'
       copy_file 'viewer.css', 'app/assets/stylesheets/viewer.css'
       copy_file 'spotlight.js', 'app/assets/javascripts/spotlight.js'
+    end
+    
+    def add_theme_images
+      empty_directory 'app/assets/images/spotlight/themes'
+      copy_file 'default_preview.png', 'app/assets/images/spotlight/themes/default_preview.png' 
+      copy_file 'nothumb_preview.png', 'app/assets/images/spotlight/themes/nothumb_preview.png' 
     end
 
     def add_roles_to_user
@@ -113,6 +126,10 @@ module Spotlight
     
     def update_catalog_controller
       gsub_file('app/controllers/catalog_controller.rb', /:openseadragon/, ':viewer')
+    end
+    
+    def update_assets_initializer
+      append_to_file('config/initializers/assets.rb', 'Rails.application.config.assets.precompile += %w( application_nothumb.css )')
     end
 
     def add_mailer_defaults
