@@ -55,7 +55,7 @@ module Spotlight
       copy_file 'application_nothumb.css', 'app/assets/stylesheets/application_nothumb.css'
       copy_file 'nothumb.scss', 'app/assets/stylesheets/nothumb/nothumb.scss'
       copy_file 'spotlight.scss', 'app/assets/stylesheets/spotlight.scss'
-      copy_file 'viewer.css', 'app/assets/stylesheets/viewer.css'
+      copy_file 'harvard.css', 'app/assets/stylesheets/harvard.css'
       copy_file 'spotlight.js', 'app/assets/javascripts/spotlight.js'
     end
     
