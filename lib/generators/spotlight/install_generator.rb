@@ -9,7 +9,7 @@ module Spotlight
     class_option :mailer_default_url_host, type: :string, default: '' # e.g. localhost:3000
 
     def inject_spotlight_routes
-      route "mount Spotlight::Engine, at: 'spotlight'"
+      route "mount Spotlight::Engine, at: '/'"
       gsub_file 'config/routes.rb', /^\s*root.*/ do |match|
         '#  ' + match.strip + ' # replaced by spotlight root path'
       end
