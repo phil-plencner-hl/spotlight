@@ -54,7 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'blacklight', ' ~> 6.0'
-gem 'blacklight-spotlight', github: 'harvard-library/spotlight', :branch => 'log_entries'
+gem 'blacklight-spotlight', github: 'harvard-library/spotlight', :branch => 'harvard_master'
 group :development, :test do
   gem 'solr_wrapper', '>= 0.3'
 end
@@ -71,7 +71,7 @@ gem 'blacklight-oembed', '>= 0.1.0'
 gem 'devise_invitable'
 gem 'delayed_job_active_record'
 gem 'daemons'
-gem 'spotlight-oaipmh-resources', github: 'harvard-library/spotlight-oaipmh-resources'
+gem 'spotlight-oaipmh-resources', github: 'harvard-library/spotlight-oaipmh-resources', :branch => 'job_entry'
 gem 'rspec'
 gem 'rubocop'
 gem 'engine_cart'
