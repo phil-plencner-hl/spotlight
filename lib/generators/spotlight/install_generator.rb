@@ -1,4 +1,5 @@
 require 'rails/generators'
+require 'fileutils'
 
 module Spotlight
   ##
@@ -152,6 +153,8 @@ module Spotlight
     def add_solr_config_resources
       copy_file '.solr_wrapper.yml', '.solr_wrapper.yml'
       directory 'solr'
+      copy_file 'solr/config/schema.xml'
+      copy_file 'solr/config/solrconfig.xml'
     end
 
     def generate_devise_invitable
@@ -162,6 +165,23 @@ module Spotlight
 
     def add_translations
       copy_file 'config/initializers/translation.rb'
+    end
+    
+    def add_delayed_jobs
+      gem 'delayed_job_active_record'
+      gem 'daemons'
+      Bundler.with_clean_env { run 'bundle install' }
+      copy_file 'config/initializers/delayed_job.rb'
+      empty_directory 'tmp/pids'
+      FileUtils.touch('tmp/pids/delayed_job.init')
+      generate 'delayed_job:active_record'
+      application "config.active_job.queue_adapter = :delayed_job"
+    end
+    
+    def harvester
+      gem 'spotlight-oaipmh-resources', github: 'harvard-library/spotlight-oaipmh-resources', branch: 'job_entry'
+      Bundler.with_clean_env { run 'bundle install' }
+      route "mount Spotlight::Oaipmh::Resources::Engine, at: 'spotlight_oaipmh_resources'"
     end
     
     #Inserts a file to join multiple values by a <br> instead of a comma
