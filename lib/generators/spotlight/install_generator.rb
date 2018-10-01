@@ -173,6 +173,7 @@ module Spotlight
     
     def harvester
       gem 'spotlight-oaipmh-resources', git: 'harvard-library/spotlight-oaipmh-resources', branch: 'job_entry'
+      Bundler.with_clean_env { run 'bundle install' }
       route "mount Spotlight::Oaipmh::Resources::Engine, at: 'spotlight_oaipmh_resources'"
     end
     
