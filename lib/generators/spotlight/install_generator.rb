@@ -165,11 +165,14 @@ module Spotlight
     end
     
     def add_delayed_jobs
+      gem 'delayed_job_active_record'
+      gem 'daemons'
       copy_file 'config/initializers/delayed_job.rb'
       application "config.active_job.queue_adapter = :delayed_job"
     end
     
     def harvester
+      gem 'spotlight-oaipmh-resources', git: 'harvard-library/spotlight-oaipmh-resources', branch: 'job_entry'
       route "mount Spotlight::Oaipmh::Resources::Engine, at: 'spotlight_oaipmh_resources'"
     end
     
