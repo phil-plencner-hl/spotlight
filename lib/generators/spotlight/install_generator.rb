@@ -153,6 +153,8 @@ module Spotlight
     def add_solr_config_resources
       copy_file '.solr_wrapper.yml', '.solr_wrapper.yml'
       directory 'solr'
+      copy_file 'solr/config/schema.xml'
+      copy_file 'solr/config/solrconfig.xml'
     end
 
     def generate_devise_invitable
