@@ -166,7 +166,7 @@ module Spotlight
     
     def add_delayed_jobs
       copy_file 'config/initializers/delayed_job.rb'
-      append_to_file('config/application.rb', 'config.active_job.queue_adapter = :delayed_job')
+      application "config.active_job.queue_adapter = :delayed_job"
     end
     
     def harvester
