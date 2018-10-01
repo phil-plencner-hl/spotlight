@@ -172,6 +172,7 @@ module Spotlight
       copy_file 'config/initializers/delayed_job.rb'
       empty_directory 'tmp/pids'
       FileUtils.touch('tmp/pids/delayed_job.init')
+      generate 'delayed_job:active_record'
       application "config.active_job.queue_adapter = :delayed_job"
     end
     
