@@ -1,4 +1,5 @@
 require 'rails/generators'
+require 'fileutils'
 
 module Spotlight
   ##
@@ -169,6 +170,8 @@ module Spotlight
       gem 'daemons'
       Bundler.with_clean_env { run 'bundle install' }
       copy_file 'config/initializers/delayed_job.rb'
+      empty_directory 'tmp/pids'
+      FileUtils.touch('tmp/pids/delayed_job.init')
       application "config.active_job.queue_adapter = :delayed_job"
     end
     
