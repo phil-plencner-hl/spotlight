@@ -164,6 +164,15 @@ module Spotlight
       copy_file 'config/initializers/translation.rb'
     end
     
+    def add_delayed_jobs
+      copy_file 'config/initializers/delayed_job.rb'
+      append_to_file('config/application.rb', 'config.active_job.queue_adapter = :delayed_job')
+    end
+    
+    def harvester
+      route "mount Spotlight::Oaipmh::Resources::Engine, at: 'spotlight_oaipmh_resources'"
+    end
+    
     #Inserts a file to join multiple values by a <br> instead of a comma
     def add_join
       copy_file 'join.rb', 'app/presenters/blacklight/rendering/join.rb'
