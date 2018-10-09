@@ -29,6 +29,17 @@ module Spotlight
       route "mount Riiif::Engine => '/images', as: 'riiif'"
       copy_file 'config/initializers/riiif.rb'
     end
+    
+    def add_delayed_jobs
+      gem 'delayed_job_active_record'
+      gem 'daemons'
+      Bundler.with_clean_env { run 'bundle install' }
+      copy_file 'config/initializers/delayed_job.rb'
+      empty_directory 'tmp/pids'
+      FileUtils.touch('tmp/pids/delayed_job.init')
+      generate 'delayed_job:active_record'
+      application "config.active_job.queue_adapter = :delayed_job"
+    end
 
     def paper_trail
       generate 'paper_trail:install'
@@ -165,17 +176,6 @@ module Spotlight
 
     def add_translations
       copy_file 'config/initializers/translation.rb'
-    end
-    
-    def add_delayed_jobs
-      gem 'delayed_job_active_record'
-      gem 'daemons'
-      Bundler.with_clean_env { run 'bundle install' }
-      copy_file 'config/initializers/delayed_job.rb'
-      empty_directory 'tmp/pids'
-      FileUtils.touch('tmp/pids/delayed_job.init')
-      generate 'delayed_job:active_record'
-      application "config.active_job.queue_adapter = :delayed_job"
     end
     
     def harvester
