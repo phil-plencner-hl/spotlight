@@ -21,7 +21,7 @@ generate 'spotlight:install', spotlight_options
 rake 'spotlight:install:migrations'
 
 # create an initial administrator (if we are running interactively..)
-if !options['quiet'] && yes?('Would you like to create an initial administrator?')
-  rake 'db:migrate' # we only need to run the migrations if we are creating an admin user
-  rake 'spotlight:initialize'
-end
+#if !options['quiet'] && yes?('Would you like to create an initial administrator?')
+#  rake 'db:migrate' # we only need to run the migrations if we are creating an admin user
+#  rake 'spotlight:initialize'
+#end
