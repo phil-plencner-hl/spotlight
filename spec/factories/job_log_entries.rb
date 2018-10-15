@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :unstarted_reindexing_log_entry, class: Spotlight::JobLogEntry do
     job_item_count 15
     job_status 'unstarted'
