@@ -30,6 +30,18 @@ module Spotlight
       copy_file 'config/initializers/riiif.rb'
     end
 
+    def add_delayed_jobs
+      gem 'delayed_job_active_record'
+      gem 'daemons'
+      Bundler.with_clean_env { run 'bundle install' }
+      copy_file 'config/initializers/delayed_job.rb'
+      empty_directory 'tmp/pids'
+      FileUtils.touch('tmp/pids/delayed_job.init')
+      generate 'delayed_job:active_record'
+      application "config.active_job.queue_adapter = :delayed_job"
+    end
+        
+        
     def paper_trail
       generate 'paper_trail:install'
     end
@@ -171,16 +183,6 @@ module Spotlight
       generate 'spotlight:increase_paper_trail_column_size'
     end
     
-    def add_delayed_jobs
-      gem 'delayed_job_active_record'
-      gem 'daemons'
-      Bundler.with_clean_env { run 'bundle install' }
-      copy_file 'config/initializers/delayed_job.rb'
-      empty_directory 'tmp/pids'
-      FileUtils.touch('tmp/pids/delayed_job.init')
-      generate 'delayed_job:active_record'
-      application "config.active_job.queue_adapter = :delayed_job"
-    end
     
     def harvester
       gem 'spotlight-oaipmh-resources', github: 'harvard-library/spotlight-oaipmh-resources', branch: 'job_entry'
