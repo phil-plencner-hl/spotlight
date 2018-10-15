@@ -167,6 +167,10 @@ module Spotlight
       copy_file 'config/initializers/translation.rb'
     end
     
+    def generate_paper_trail_column_size_migration
+      generate 'spotlight:increase_paper_trail_column_size'
+    end
+    
     def add_delayed_jobs
       gem 'delayed_job_active_record'
       gem 'daemons'
