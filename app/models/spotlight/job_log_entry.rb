@@ -17,7 +17,10 @@ module Spotlight
     end
 
     def in_progress!
-      self.start_time = Time.zone.now
+      if self.start_time.nil?
+        self.start_time = Time.zone.now
+      end
+      
       super
     rescue
       Rails.logger.error "unexpected error updating log entry to :in_progress from #{caller}"
