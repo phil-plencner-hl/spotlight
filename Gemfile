@@ -54,11 +54,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'blacklight', ' ~> 6.0'
-<<<<<<< HEAD
 gem 'blacklight-spotlight', github: 'harvard-library/spotlight', :branch => 'harvard_master'
-=======
-gem 'blacklight-spotlight', github: 'harvard-library/spotlight', :branch => 'harvard_development'
->>>>>>> refs/remotes/origin/harvard_development
+
 group :development, :test do
   gem 'solr_wrapper', '>= 0.3'
 end
