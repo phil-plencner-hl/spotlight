@@ -178,6 +178,11 @@ module Spotlight
       copy_file 'config/initializers/translation.rb'
     end
     
+
+    def generate_paper_trail_column_size_migration
+      generate 'spotlight:increase_paper_trail_column_size'
+    end
+    
     def harvester
       gem 'spotlight-oaipmh-resources', github: 'harvard-library/spotlight-oaipmh-resources', branch: 'job_entry'
       Bundler.with_clean_env { run 'bundle install' }
