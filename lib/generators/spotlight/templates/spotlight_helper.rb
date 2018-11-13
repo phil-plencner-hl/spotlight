@@ -3,4 +3,5 @@
 module SpotlightHelper
   include ::BlacklightHelper
   include Spotlight::MainAppHelpers
+  include Spotlight::UrlHelper
 end
