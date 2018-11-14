@@ -1,4 +1,5 @@
 Delayed::Worker.logger = Logger.new(File.join(Rails.root, 'log', 'delayed_job.log'), 'daily')
+Delayed::Worker.max_attempts = 1
 
 if Rails.env.production? || Rails.env.development?
   # Check if the delayed job process is already running
