@@ -3778,7 +3778,7 @@ tbody.collapse.in,
     text-decoration: none;
     background-color: transparent;
     background-image: none;
-    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: "progid progid: DXImageTransform.Microsoft.gradient(enabled=false)";
     cursor: not-allowed
 }
 
@@ -7184,7 +7184,7 @@ button.close {
 .carousel-control.left {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
     background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)
+    filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)"
 }
 
 .carousel-control.right {
@@ -7192,7 +7192,7 @@ button.close {
     right: 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
     background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)
+    filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)"
 }
 
 .carousel-control:hover,
@@ -12968,7 +12968,7 @@ tbody.collapse.in {
     text-decoration: none;
     background-color: transparent;
     background-image: none;
-    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: "progid: DXImageTransform.Microsoft.gradient(enabled=false)";
     cursor: not-allowed
 }
 
@@ -16758,7 +16758,7 @@ button.close {
 .carousel-control.left {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
     background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)
+    filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)"
 }
 
 .carousel-control.right {
@@ -16766,7 +16766,7 @@ button.close {
     right: 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
     background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)
+    filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)"
 }
 
 .carousel-control:hover,
@@ -18764,7 +18764,7 @@ ul.st-text-block {
     width: 24px;
     margin: 0 auto;
     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
-    filter: progid: DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)
+    filter: "progid: DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)"
 }
 
 .leaflet-oldie .leaflet-popup-tip-container {
@@ -20674,7 +20674,7 @@ table.tags th:nth-child(3) {
     right: 0;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
     background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=0)
+    filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=0)"
 }
 
 @media screen and (min-width: 768px) {
