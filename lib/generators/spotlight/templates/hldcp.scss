@@ -21794,3 +21794,205 @@ h1.page-title{color:#222; padding:10px 0 30px 0;}
 p{font-family:Lora; font-size:18px; color:#222;}
 /* END TERMS OF USE */
 
+/*Fonts!*/
+@import url('https://fontlibrary.org/face/trueno');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+
+
+/*HL Logo*/
+#header-navbar .navbar-brand{color:white;
+    background-image:url("http://dcp-dev2.lib.harvard.edu/hl_logoblack.png");
+    background-position:right;
+    background-size:330px 60px ;
+    color:#1e1e1e;
+}
+
+/*Digital Collections Logo Top Right*/
+#header-navbar:after {
+    color:white;
+    font-family:'TruenoRegular', Helvetica, sans-serif ;
+    font-weight:bold;
+}
+
+.image-masthead .h1 {
+    color:#000000;
+    visibility:visible;
+    text-shadow:none;
+    font-family:'TruenoBold', Helvetica, sans-serif;
+    font-size:48px;
+}
+
+
+
+.masthead {
+    height: 400px;
+    background-color:#ffffff;
+    border-bottom:0px;
+}
+body.blacklight-exhibits .masthead {
+    height: 280px;
+}
+.site-title-container {
+    height: 310px;
+    max-height: 310px !important;
+}
+.site-title {
+    margin: 0 auto;
+    width: 80%;
+}
+.site-title.h1 {
+    margin-top: 80px !important;
+}
+
+.site-title.h1 small {
+    color:#000000;
+}
+
+.image-masthead .h1 {
+    font-family: 'TruenoBold', Helvetica, Arial, sans-serf;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+}
+.image-masthead small {
+    font-family: 'Lora', Times New Roman, serif;
+    font-size: 26px !important;
+    font-style: italic;
+    padding-top: 39px !important;
+    text-shadow: none;
+}
+.image-masthead .navbar {
+    background-color: #3E6F7D !important;
+    height: 90px;
+    margin: 0 auto;
+    width: 970px;
+}
+
+.background-container{background-image:none !important; }
+
+.image-masthead .background-container-gradient{background:none;}
+
+.site-title-container{margin:0 20px 0 20px;}
+
+.card-face .description{
+    padding:0 10px 0 10px;
+    font-size:12px;
+}
+
+
+/* MAURA'S */
+
+/* increase padding/margins around text on cards */
+.card-face h2, .card-face p {
+    padding: 0 20px;
+}
+
+.card-front .card-title{
+    font-family:'TruenoBold', Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.23;
+    font-weight:700;
+}
+
+.card-face .description {
+    font-size:15px;
+    font-weight:400;
+    line-height:1.73;
+}
+
+/* larger button/padding */
+.btn-primary {
+    background-color:#0579b8;
+    border-color:transparent;
+}
+.btn {
+    border:2px solid transparent;
+    font-family:"TruenoBold", sans-serif;
+    font-size:14px;
+    line-height:19px;
+    letter-spacing:1.17px;
+    font-weight:700;
+    padding:12px 23px;
+    text-transform:uppercase;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.btn-primary:hover {
+    background-color:#2a5280;
+    border-color:transparent;
+}
+.card-front .visit-exhibit {
+    margin-bottom:10px;
+}
+
+/*ENRIQUE*/
+#exhibit-navbar > .container {
+    width: 970px;
+}
+ul.navbar-nav {
+    font-family: 'Trueno', Helvetica, Arial, sans-serf;
+    font-weight: 600;
+    padding-top: 22px;
+}
+.image-masthead .navbar .navbar-nav > .active > a {
+    background-color: #3E6F7D !important;
+    border-bottom: 3px solid #BAC8CB;
+}
+.image-masthead .navbar ul.nav.navbar-nav > li a {
+    letter-spacing: 2px !important;
+}
+#facets {
+    background-color: #1E1E1E;
+    font-family: 'Trueno', Helvetica, Arial, sans-serf;
+}
+#facets h2.facets-heading {
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+#facets .panel-default > .panel-heading {
+    color: #fff;
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+    text-transform: uppercase;
+}
+#facets .panel-title {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+#facets .panel-default {
+    border: none;
+}
+#facets .panel-heading {
+    padding: 15px;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #1e1e1e !important;
+    background-color: #1e1e1e;
+}
+a.facet_select, a.more_facets_link {
+    color: #81BBDB;
+}
+a.facet_select:hover, a.more_facets_link:hover {
+    color: #81BBDB;
+}
+.facet-count {
+    color: #fff;
+}
+p.category-title {
+    color: #fff;
+    font-family: 'Trueno', Helvetica, Arial, sans-serf;
+}
+.browse-category .item-count {
+    font-family: 'Trueno', Helvetica, Arial, sans-serf;
+}
+#documents .thumbnail {
+    border: none;
+}
+#documents .document {
+    border-bottom: none;
+}
+/*END ENRIQUE*/
+
