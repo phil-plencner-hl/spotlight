@@ -21794,7 +21794,6 @@ h1.page-title{color:#222; padding:10px 0 30px 0;}
 p{font-family:Lora; font-size:18px; color:#222;}
 /* END TERMS OF USE */
 
-/*Fonts!*/
 @import url('https://fontlibrary.org/face/trueno');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
 
@@ -21868,13 +21867,13 @@ body.blacklight-exhibits .masthead {
     width: 970px;
 }
 
-.background-container{background-image:none !important; }
+body.blacklight-exhibits .background-container{background-image:none !important; }
 
-.image-masthead .background-container-gradient{background:none;}
+body.blacklight-exhibits .image-masthead .background-container-gradient{background:none;}
 
-.site-title-container{margin:0 20px 0 20px;}
+body.blacklight-exhibits .site-title-container{margin:0 20px 0 20px;}
 
-.card-face .description{
+body.blacklight-exhibits .card-face .description{
     padding:0 10px 0 10px;
     font-size:12px;
 }
@@ -21930,7 +21929,7 @@ body.blacklight-exhibits .masthead {
     width: 970px;
 }
 ul.navbar-nav {
-    font-family: 'Trueno', Helvetica, Arial, sans-serf;
+    font-family: 'TruenoRegular', Helvetica, Arial, sans-serf;
     font-weight: 600;
     padding-top: 22px;
 }
@@ -21995,7 +21994,3 @@ p.category-title {
     border-bottom: none;
 }
 /*END ENRIQUE*/
-
-
-
-
