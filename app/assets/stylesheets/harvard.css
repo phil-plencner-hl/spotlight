@@ -361,3 +361,76 @@
   -webkit-text-decoration-color: #0579b8;
   text-decoration-color: #0579b8;
 }
+
+.exhibit-card {
+  height: auto;
+  background-color: #FFFFFF;
+}
+
+.exhibit-card.hover .flipper, .exhibit-card:hover .flipper {
+
+  -ms-filter: none;
+  -webkit-filter: none;
+  filter: none;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.card-face {
+  height: auto;
+  position: relative;
+  display: inline-block;
+  webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+.card-front .card-title {
+  font-family: TruenoRg;
+  color: #1e1e1e;
+}
+
+.card-front .description {
+  font-size: 12px
+}
+
+.card-front .visit-exhibit {
+  bottom: 16px;
+  position: relative;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.card-back {
+  -webkit-transform: none;
+  transform: none;
+}
+
+.card-back .subtitle {
+  font-family: TruenoRg;
+  color: #999;
+}
+.card-back .visit-exhibit {
+  bottom: 5px;
+  position:relative;
+  /*margin-left: 5%;*/
+}
+
+.blacklight-exhibits-index .site-title-container {
+  background-color: #FFFFFF;
+}
+
+.blacklight-exhibits-index .masthead .site-title {
+  color: #000000;
+  font-family: TruenoRg;
+}
+.blacklight-exhibits-index .masthead small {
+  color: #000000;
+}
+
+#main-container {
+  margin: auto;
+  width: 90%;
+}
+
+.blacklight-exhibits-index .row {
+  width:100%;
+}
