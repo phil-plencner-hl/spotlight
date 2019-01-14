@@ -382,10 +382,16 @@
   display: inline-block;
   webkit-backface-visibility: visible;
   backface-visibility: visible;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
 }
 .card-front .card-title {
-  font-family: TruenoRg;
+  font-family: "TruenoBd", sans-serif;
+  font-size: 24px;
   color: #1e1e1e;
+  line-height: 30px;
+  padding-bottom: 5px;
 }
 
 .card-front .description {
@@ -405,25 +411,61 @@
 }
 
 .card-back .subtitle {
-  font-family: TruenoRg;
-  color: #999;
+  color: #1e1e1e;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.4;
 }
+
+.card-back .description, .card-back .description span {
+  color: #1e1e1e;
+  font-size: 14px;
+  font-family: "Lora", serif;
+  line-height: 1.7;
+}
+
 .card-back .visit-exhibit {
   bottom: 5px;
-  position:relative;
-  /*margin-left: 5%;*/
+  position: relative;
+  margin-left: 1%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .blacklight-exhibits-index .site-title-container {
   background-color: #FFFFFF;
+  padding-top: 54px;
+}
+
+.blacklight-exhibits-index .masthead {
+  background-color: transparent;
+  border-bottom: none;
+  height: 350px;
+}
+
+.site-title.h1 {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  white-space: initial;
 }
 
 .blacklight-exhibits-index .masthead .site-title {
-  color: #000000;
-  font-family: TruenoRg;
+  color: #1e1e1e;
+  font-family: "TruenoBd", sans-serif;
+  font-size: 60px;
+  letter-spacing: 3.05px;
+  line-height: 74px;
 }
 .blacklight-exhibits-index .masthead small {
-  color: #000000;
+  color: #1e1e1e;
+  font-family: "Lora", serif;
+  font-size: 26px;
+  font-style: italic;
+  letter-spacing: initial;
+  line-height: 40.04px;
+  padding-top: 20px;
 }
 
 #main-container {
@@ -433,4 +475,49 @@
 
 .blacklight-exhibits-index .row {
   width:100%;
+}
+
+
+body h4.nav-heading {
+  color: #1e1e1e;
+  font-family: "TruenoBd", sans-serif;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+body ul.sidenav li a {
+  color: #0579B8;
+  font-family: "TruenoSBd", sans-serif;
+  font-size: 14px;
+}
+
+body h1.page-header {
+  color: #1e1e1e;
+  font-family: "TruenoBd", sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+body h1 small {
+  font-family: "TruenoBd", sans-serif;
+  letter-spacing: 1.7px;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+
+body table {
+  color: #1e1e1e;
+  font-family: "Lora", serif;
+  margin-bottom: 30px;
+}
+
+body h3 {
+  color: #1e1e1e;
+  font-family: "TruenoBd", sans-serif;
+}
+
+.hl__footerLink {
+  font-family: "Trueno", sans-serif !important;
+  font-weight: 400 !important;
 }
