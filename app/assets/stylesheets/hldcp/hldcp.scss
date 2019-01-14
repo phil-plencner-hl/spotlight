@@ -1,5 +1,5 @@
 thead.image-masthead {
-height: 300px;
+height: auto;
 }
 
 .image-masthead .h1 {
@@ -12,6 +12,8 @@ text-align: center;
 .container.site-title-container {
     padding: 55px 0;
     margin-bottom: 94px;
+    display: inline;
+    height: auto;
 }
 
 .image-masthead .navbar {
@@ -61,11 +63,6 @@ border: 1px solid transparent;
     font-weight: 200;
     height: 45px;
     padding: 5px 10px;
-}
-
-.btn-primary {
-background-color: #ffffff;
-    border: 1px solid transparent;
 }
 
 .facets.sidenav {
@@ -322,7 +319,7 @@ span.disabled.btn.btn-disabled, .prev_next_links a.btn.btn-link {
 color: #0579b8;
 }
 
-div.sort_options.btn-group a.btn, 
+div.sort_options.btn-group a.btn,
 div.sort_options.btn-group span.btn {
     font-size: 13px;
 letter-spacing: 1.17px;

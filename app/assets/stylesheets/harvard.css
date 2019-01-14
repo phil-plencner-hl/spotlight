@@ -445,9 +445,9 @@
 }
 
 .site-title.h1 {
-  margin-left: 20%;
+  margin-left: 5%;
   margin-right: 20%;
-  text-align: center;
+  text-align: left;
   white-space: initial;
 }
 
