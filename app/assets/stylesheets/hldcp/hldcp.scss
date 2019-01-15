@@ -1,4 +1,4 @@
-thead.image-masthead {
+d.image-masthead {
 height: auto;
 }
 
@@ -63,6 +63,15 @@ border: 1px solid transparent;
     font-weight: 200;
     height: 45px;
     padding: 5px 10px;
+}
+
+form.navbar-form button#search {
+    background-color: #fff;
+    border: 1px solid;
+}
+
+div#sidebar + div.col-md-9 {
+    margin-left: unset;
 }
 
 .facets.sidenav {
@@ -192,6 +201,10 @@ h3.document-title-heading > span + a {
 color: #0579b8;
 }
 
+#document dl.dl-horizontal.dl-invert {
+    width: 90%;
+}
+
 .dl-horizontal dt {
 width: 200px;
 }
@@ -202,6 +215,11 @@ dl.document-metadata dt {
     letter-spacing: 1.2px;
     text-transform: uppercase;
     color: #1e1e1e;
+}
+
+.blacklight-hollis-record_tesim a {
+    color: #0579b8;
+    font-family: "TruenoBd", sans-serif;
 }
 
 .page_links {
@@ -362,5 +380,3 @@ body.blacklight-about_pages-show #sidebar {
     line-height: 32px;
     margin-bottom: 32px;
 }
-
-

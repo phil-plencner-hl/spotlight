@@ -1,4 +1,4 @@
-.iframe-wrapper iframe {
+frame-wrapper iframe {
   height: 80vh;
   width: 100%;
 }
@@ -445,9 +445,9 @@
 }
 
 .site-title.h1 {
-  margin-left: 5%;
-  margin-right: 20%;
-  text-align: left;
+  margin-left: 18%;
+  margin-right: 18%;
+  text-align: center;
   white-space: initial;
 }
 
@@ -520,4 +520,22 @@ body h3 {
 .hl__footerLink {
   font-family: "Trueno", sans-serif !important;
   font-weight: 400 !important;
+}
+
+#main-container .col-md-9 {
+    margin-left: 13%;
+}
+
+#main-container aside.col-md-3 {
+    visibility: hidden;
+    max-width: 13%;
+}
+
+body.spotlight-manager #main-container .col-md-9 {
+    margin-left: unset;
+}
+
+body.spotlight-manager #main-container aside.col-md-3 {
+    visibility: unset;
+    max-width: 25%;
 }
