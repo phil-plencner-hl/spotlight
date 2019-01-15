@@ -371,7 +371,8 @@ a.dropdown-toggle::after {
     display: none;
 }
 
-body.blacklight-about_pages-show #sidebar {
+body.blacklight-about_pages-show #sidebar,
+body.blacklight-feature_pages #sidebar {
     visibility: hidden;
     max-width: 13%;
 }
