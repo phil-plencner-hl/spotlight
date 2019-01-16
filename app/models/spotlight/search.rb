@@ -24,6 +24,7 @@ module Spotlight
 
     def thumbnail_image_url
       return unless thumbnail && thumbnail.iiif_url
+
       thumbnail.iiif_url
     end
 
@@ -83,6 +84,8 @@ module Spotlight
     end
 
     def should_generate_new_friendly_id?
+      return false if new_record? && slug.present?
+
       super || (title_changed? && persisted?)
     end
 

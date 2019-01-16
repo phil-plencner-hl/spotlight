@@ -177,6 +177,7 @@ module Spotlight
     def add_translations
       copy_file 'config/initializers/translation.rb'
     end
+<<<<<<< HEAD
     
 
     def generate_paper_trail_column_size_migration
@@ -193,5 +194,7 @@ module Spotlight
     def add_join
       copy_file 'join.rb', 'app/presenters/blacklight/rendering/join.rb'
     end
+=======
+>>>>>>> refs/tags/v2.3.2
   end
 end
