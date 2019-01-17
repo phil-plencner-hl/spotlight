@@ -71,6 +71,7 @@ module Spotlight
       copy_file 'hldcp.scss', 'app/assets/stylesheets/hldcp/hldcp.scss'
       copy_file 'spotlight.scss', 'app/assets/stylesheets/spotlight.scss'
       copy_file 'harvard.css', 'app/assets/stylesheets/harvard.css'
+      copy_file 'harvard-main.css', 'app/assets/stylesheets/harvard-main.css'
       copy_file 'spotlight.js', 'app/assets/javascripts/spotlight.js'
     end
     

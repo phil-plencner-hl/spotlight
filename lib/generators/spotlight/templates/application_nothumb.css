@@ -12,4 +12,5 @@
  *
  *= require application.css
  *= require_directory ./nothumb
+ *= require_directory ./hldcp
  */
