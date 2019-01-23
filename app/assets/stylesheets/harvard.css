@@ -1,4 +1,4 @@
-frame-wrapper iframe {
+.iframe-wrapper iframe {
   height: 80vh;
   width: 100%;
 }
