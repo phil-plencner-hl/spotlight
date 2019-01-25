@@ -356,6 +356,7 @@ en:
         visit_exhibit: Visit exhibit
       exhibit_card_front:
         unpublished: Unpublished
+        visit_exhibit: Visit exhibit
       export:
         download: Export data
         heading: Export data
