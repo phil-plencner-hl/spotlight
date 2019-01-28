@@ -67,7 +67,6 @@ module Spotlight
       copy_file 'application.css', 'app/assets/stylesheets/application.css' 
       copy_file 'application_nothumb.css', 'app/assets/stylesheets/application_nothumb.css'
       copy_file 'application_hldcp.css', 'app/assets/stylesheets/application_hldcp.css'
-      copy_file 'nothumb.scss', 'app/assets/stylesheets/hldcp/nothumb.scss'
       copy_file 'hldcp.scss', 'app/assets/stylesheets/hldcp/hldcp.scss'
       copy_file 'spotlight.scss', 'app/assets/stylesheets/spotlight.scss'
       copy_file 'harvard.css', 'app/assets/stylesheets/harvard.css'
