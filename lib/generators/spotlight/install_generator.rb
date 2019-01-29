@@ -61,13 +61,16 @@ module Spotlight
     def assets
       #create a nothumb directory for the nothumb theme 
       empty_directory 'app/assets/stylesheets/nothumb'
+      empty_directory 'app/assets/stylesheets/hldcp'
       
       #use our modified application.css
       copy_file 'application.css', 'app/assets/stylesheets/application.css' 
       copy_file 'application_nothumb.css', 'app/assets/stylesheets/application_nothumb.css'
-      copy_file 'nothumb.scss', 'app/assets/stylesheets/nothumb/nothumb.scss'
+      copy_file 'application_hldcp.css', 'app/assets/stylesheets/application_hldcp.css'
+      copy_file 'hldcp.scss', 'app/assets/stylesheets/hldcp/hldcp.scss'
       copy_file 'spotlight.scss', 'app/assets/stylesheets/spotlight.scss'
       copy_file 'harvard.css', 'app/assets/stylesheets/harvard.css'
+      copy_file 'harvard-main.css', 'app/assets/stylesheets/harvard-main.css'
       copy_file 'spotlight.js', 'app/assets/javascripts/spotlight.js'
     end
     
@@ -75,6 +78,7 @@ module Spotlight
       empty_directory 'app/assets/images/spotlight/themes'
       copy_file 'default_preview.png', 'app/assets/images/spotlight/themes/default_preview.png' 
       copy_file 'nothumb_preview.png', 'app/assets/images/spotlight/themes/nothumb_preview.png' 
+      copy_file 'hldcp_preview.png', 'app/assets/images/spotlight/themes/hldcp_preview.png' 
     end
 
     def add_roles_to_user
@@ -141,7 +145,7 @@ module Spotlight
     end
     
     def update_assets_initializer
-      append_to_file('config/initializers/assets.rb', 'Rails.application.config.assets.precompile += %w( application_nothumb.css )')
+      append_to_file('config/initializers/assets.rb', 'Rails.application.config.assets.precompile += %w( application_nothumb.css application_hldcp.css )')
     end
 
     def add_mailer_defaults
