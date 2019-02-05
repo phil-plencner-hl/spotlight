@@ -1,0 +1,6 @@
+2.3.2-lts-1 (02/05/2019) VC
+--Initial tagging
+--iFrame embedding
+--Updated dashboard to display harvesting status ('log entries')
+--Title sorting
+--Harvard theming
