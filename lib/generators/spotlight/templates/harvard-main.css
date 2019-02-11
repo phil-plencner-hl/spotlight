@@ -270,15 +270,17 @@
     font-size: 1.5rem;
   }
 }
-.hl__topHeaderTitle__collections a {
+span.hl__topHeaderTitle__collections {
   font-family: Lora;
   font-size: 28px;
   font-style: italic;
   color: #fff;
-  padding-left: 30px;
+  padding-left: 15px;
+  text-transform: none;
+  letter-spacing: normal;
 }
 @media (max-width:620px) {
-  .hl__topHeaderTitle__collections a {
+  span.hl__topHeaderTitle__collections {
     font-size: 1.3rem;
     padding: 0;
   }
