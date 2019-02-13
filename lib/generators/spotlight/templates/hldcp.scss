@@ -12,8 +12,9 @@ text-align: center;
 .container.site-title-container {
     padding: 55px 0;
     margin-bottom: 94px;
-    display: inline;
+    display: block;
     height: auto;
+    min-height: 350px;
 }
 
 .image-masthead .navbar {
@@ -72,6 +73,10 @@ form.navbar-form button#search {
 
 div#sidebar + div.col-md-9 {
     margin-left: unset;
+}
+
+div#sidebar .sidenav li {
+    min-width: 100px;
 }
 
 .facets.sidenav {
@@ -373,7 +378,6 @@ a.dropdown-toggle::after {
 
 body.blacklight-about_pages-show #sidebar,
 body.blacklight-feature_pages #sidebar {
-    visibility: hidden;
     max-width: 13%;
 }
 

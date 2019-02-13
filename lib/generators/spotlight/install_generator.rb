@@ -197,5 +197,6 @@ module Spotlight
     def add_join
       copy_file 'join.rb', 'app/presenters/blacklight/rendering/join.rb'
     end
+ 
   end
 end

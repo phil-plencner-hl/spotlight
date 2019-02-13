@@ -56,7 +56,7 @@ these collections.)
   s.add_dependency 'i18n-active_record'
   s.add_dependency 'i18n', '< 1.1' # pinned until Rails and i18n sort our compatibility https://github.com/rails/rails/pull/33574
 
-  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'sqlite3', '~> 1.3.13'
   s.add_development_dependency 'rspec-rails', '~> 3.1'
   s.add_development_dependency 'rspec-its'
   s.add_development_dependency 'rspec-activemodel-mocks'
