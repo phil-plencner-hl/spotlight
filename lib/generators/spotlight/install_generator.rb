@@ -30,6 +30,10 @@ module Spotlight
       copy_file 'config/initializers/riiif.rb'
     end
     
+    def pin_sqlite_version
+      gsub_file('Gemfile', /\'sqlite3\'/, '\'sqlite3\', \'~>  1.3.13\'')
+    end
+    
     def add_delayed_jobs
       gem 'delayed_job_active_record'
       gem 'daemons'
