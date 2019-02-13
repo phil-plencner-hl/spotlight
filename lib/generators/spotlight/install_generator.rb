@@ -197,9 +197,6 @@ module Spotlight
     def add_join
       copy_file 'join.rb', 'app/presenters/blacklight/rendering/join.rb'
     end
-    
-    def add_translations
-      copy_file 'config/initializers/translation.rb'
-    end
+ 
   end
 end
