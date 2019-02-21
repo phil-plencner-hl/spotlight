@@ -12,9 +12,10 @@ text-align: center;
 .container.site-title-container {
     padding: 55px 0;
     margin-bottom: 94px;
-    display: block;
+    //display: block;
+    display: inline;
     height: auto;
-    min-height: 350px;
+    //min-height: 350px;
 }
 
 .image-masthead .navbar {
