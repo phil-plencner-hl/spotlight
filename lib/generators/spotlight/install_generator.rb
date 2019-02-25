@@ -66,6 +66,7 @@ module Spotlight
       #use our modified application.css
       copy_file 'application.css', 'app/assets/stylesheets/application.css' 
       copy_file 'application_nothumb.css', 'app/assets/stylesheets/application_nothumb.css'
+      copy_file 'nothumb.scss', 'app/assets/stylesheets/nothumb/nothumb.scss'
       copy_file 'application_hldcp.css', 'app/assets/stylesheets/application_hldcp.css'
       copy_file 'hldcp.scss', 'app/assets/stylesheets/hldcp/hldcp.scss'
       copy_file 'spotlight.scss', 'app/assets/stylesheets/spotlight.scss'
