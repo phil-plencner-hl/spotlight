@@ -1,3 +1,6 @@
+@import url("http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css");
+@import url("http://cdn.materialdesignicons.com/3.2.89/css/materialdesignicons.min.css");
+@import url("http://fast.fonts.net/cssapi/2ccf4aab-d5f9-4265-a63a-ad3a91e896da.css");
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
 .slide-pane {
   display: -ms-flexbox;
