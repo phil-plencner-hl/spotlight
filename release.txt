@@ -4,6 +4,3 @@
 --Updated dashboard to display harvesting status ('log entries')
 --Title sorting
 --Harvard theming
-
-2.3.2-lts-2 (03/05/2019) VC
--- More theme stylesheet changes
