@@ -436,6 +436,7 @@
 .blacklight-exhibits-index .site-title-container {
   background-color: #FFFFFF;
   padding-top: 54px;
+  display: inline;
 }
 
 .blacklight-exhibits-index .masthead {
@@ -538,4 +539,9 @@ body.spotlight-manager #main-container .col-md-9 {
 body.spotlight-manager #main-container aside.col-md-3 {
     visibility: unset;
     max-width: 25%;
+}
+
+.tab-content {
+  margin:auto;
+  width:75%;
 }
