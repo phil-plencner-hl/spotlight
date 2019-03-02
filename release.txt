@@ -4,3 +4,13 @@
 --Updated dashboard to display harvesting status ('log entries')
 --Title sorting
 --Harvard theming
+
+2.3.2-lts-2 (03/05/2019) VC
+--Theming updates:
+  -Applying the theme without a refresh
+  -Font color changes in the facet display
+  -Consistent text display whether an image display with text or just plain text
+  -Changed the List and Gallery buttons from appearing disabled (grayed out)
+  -Alignment of search box
+  -Centered the “curated features” dropdown
+  -More spacing added to the left menu
