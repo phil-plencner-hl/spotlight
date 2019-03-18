@@ -365,6 +365,9 @@
 .exhibit-card {
   height: auto;
   background-color: #FFFFFF;
+  max-width: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .exhibit-card.hover .flipper, .exhibit-card:hover .flipper {
@@ -385,6 +388,7 @@
   background-color: transparent;
   box-shadow: none;
   border: none;
+  padding: 10px;
 }
 .card-front .card-title {
   font-family: "TruenoBd", sans-serif;
@@ -442,12 +446,9 @@
 .blacklight-exhibits-index .masthead {
   background-color: transparent;
   border-bottom: none;
-  height: 350px;
 }
 
 .site-title.h1 {
-  margin-left: 18%;
-  margin-right: 18%;
   text-align: center;
   white-space: initial;
 }
@@ -458,6 +459,7 @@
   font-size: 60px;
   letter-spacing: 3.05px;
   line-height: 74px;
+  padding-top: 25px;
 }
 .blacklight-exhibits-index .masthead small {
   color: #1e1e1e;
@@ -476,6 +478,8 @@
 
 .blacklight-exhibits-index .row {
   width:100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 
@@ -524,7 +528,7 @@ body h3 {
 }
 
 #main-container .col-md-9 {
-    margin-left: 13%;
+  margin-left: 13%;
 }
 
 #main-container aside.col-md-3 {
@@ -543,5 +547,5 @@ body.spotlight-manager #main-container aside.col-md-3 {
 
 .tab-content {
   margin:auto;
-  width:75%;
+  width:100%;
 }

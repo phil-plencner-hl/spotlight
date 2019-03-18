@@ -272,7 +272,7 @@ span.hl__topHeaderTitle__collections {
   font-size: 28px;
   font-style: italic;
   color: #fff;
-  padding-left: 15px;
+  padding-left: 10px;
   text-transform: none;
   letter-spacing: normal;
 }
@@ -3835,8 +3835,6 @@ body {
 }
 .btn-primary, .btn-secondary {
   color: #fff;
-  padding: 10px 45px;
-  margin: 0 10px;
 }
 .btn-secondary {
   background-color: transparent;
