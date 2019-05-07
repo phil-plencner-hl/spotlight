@@ -9,7 +9,8 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.13'
+#gem 'sqlite3', '~> 1.3.13'
+gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -53,8 +54,9 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'blacklight', ' ~> 6.0'
-gem 'blacklight-spotlight', github: 'harvard-library/spotlight', :branch => 'harvard_master'
+#Pinning to 6.19.2 because 6.20 breaks the app
+gem 'blacklight', '6.19.2'
+gem 'blacklight-spotlight', github: 'harvard-library/spotlight', :branch => 'harvard_development_hackathon'
 
 group :development, :test do
   gem 'solr_wrapper', '>= 0.3'
