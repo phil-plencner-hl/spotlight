@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Spotlight
   ##
   # Exhibit and browse category mastheads
@@ -9,7 +11,7 @@ module Spotlight
     private
 
     def image_size
-      [1800, 180]
+      [1350, 360]
     end
   end
 end
