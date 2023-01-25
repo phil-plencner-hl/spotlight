@@ -1,7 +1,7 @@
 ## ARCHIVED 
 This project has been archived as it has been replaced by a new project.  
 
-The new [Curiosity] (https://github.com/harvard-lts/curiosity) project is available in the [Harvard-LTS] (https://github.com/harvard-lts) organization 
+The new [Curiosity](https://github.com/harvard-lts/curiosity) project is available in the [Harvard-LTS](https://github.com/harvard-lts) organization 
 
 spotlight
 =========
